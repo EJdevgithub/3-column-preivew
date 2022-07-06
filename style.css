@@ -92,6 +92,11 @@ color: var(--Bright-orange);
 .btn3{
  color: var(--Very-dark-cyan);
 }
+.btn1:hover,.btn2:hover,.btn3:hover{
+cursor: pointer;
+background-color: hsl(0, 0, 0);
+color: hsl(0, 0, 100);
+}
 
 .attribution {
  font-size: 11px;
@@ -103,7 +108,7 @@ color: var(--Bright-orange);
 }
 
 /* media query */
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
  .container {
   margin: 10px 0 10px 0;
   height: auto;
@@ -111,5 +116,18 @@ color: var(--Bright-orange);
 
  .box {
   border-radius: 0 !important;
+  height: 400px;
  }
+
+ /* box color */
+ 
+#orange {
+ border-top-left-radius: 5px !important;
+ border-top-right-radius: 5px !important;
+}
+ 
+#dark-green {
+ border-bottom-left-radius: 5px !important;
+ border-bottom-right-radius: 5px !important;
+  }
 }
